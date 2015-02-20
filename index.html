@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="order.js"></script>
+	<title>代購網站</title>
+</head>
+<body onLoad="appendToItemForm(1);">
+	<div class="container">
+		<div class="jumbotron" style="background:HotPink;color:white">
+			<h1>提出代購單</h1>
+			<p><h4>代購程序：<br />
+				<span class="badge">1</span> 買方試算(如確定可進行 Step 2.)<br />
+				<span class="badge">2</span> 買家提出代購(賣家回覆準確報價)<br />
+				<span class="badge">3</span> 買方如確認購買，系統直接提供付款帳號<br />
+				<span class="badge">4</span> 買方匯款後提供收件資料(賣家下單&出貨)<br />
+				<span class="badge">5</span> 買家確認收到完成交易<br />
+			</h4></p>
+		</div>
+		<form role="form">
+			<div class="form-group itemContainer" id="ItemForm">
+			</div>
+			<a href="#" class="btn btn-success btn-lg" onClick="appendToItemForm(itemCounter++)">再增加一項商品</a>
+		</form>
+	</div>
+</body>
+</html>
